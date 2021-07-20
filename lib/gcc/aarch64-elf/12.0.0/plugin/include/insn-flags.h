@@ -207,7 +207,6 @@
 #define HAVE_aarch64_crc32cx (TARGET_CRC32)
 #define HAVE_csinc3si_insn 1
 #define HAVE_csinc3di_insn 1
-#define HAVE_csneg3_uxtw_insn 1
 #define HAVE_csneg3si_insn 1
 #define HAVE_csneg3di_insn 1
 #define HAVE_aarch64_uqdecsi (TARGET_SVE)
@@ -10225,7 +10224,6 @@ extern rtx        gen_aarch64_crc32cw                                (rtx, rtx, 
 extern rtx        gen_aarch64_crc32cx                                (rtx, rtx, rtx);
 extern rtx        gen_csinc3si_insn                                  (rtx, rtx, rtx, rtx);
 extern rtx        gen_csinc3di_insn                                  (rtx, rtx, rtx, rtx);
-extern rtx        gen_csneg3_uxtw_insn                               (rtx, rtx, rtx, rtx);
 extern rtx        gen_csneg3si_insn                                  (rtx, rtx, rtx, rtx);
 extern rtx        gen_csneg3di_insn                                  (rtx, rtx, rtx, rtx);
 extern rtx        gen_aarch64_uqdecsi                                (rtx, rtx, rtx);
