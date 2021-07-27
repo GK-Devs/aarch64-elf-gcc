@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210726 (experimental)")
+(!version  "12.0.0 20210727 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 227 0
@@ -1476,7 +1476,7 @@
                                       (!type struct 71 
                                        (!type already_seen 70)
                                        gc_pointed_to "cp_token_cache"
-                                       (!srcfileloc  "cp/parser.h" 137)
+                                       (!srcfileloc  "cp/parser.h" 141)
                                        (!fields 2 
                                         (!pair  "first"
                                          (!type pointer 72 nil  gc_unused
@@ -1607,14 +1607,14 @@
                                            )
                                            nil 516 nil nil )
                                          )
-                                         (!srcfileloc  "cp/parser.h" 131)
+                                         (!srcfileloc  "cp/parser.h" 135)
                                          (!options 
                                           (!option skip string  "")
                                          )
                                         )
                                         (!pair  "last"
                                          (!type already_seen 72)
-                                         (!srcfileloc  "cp/parser.h" 134)
+                                         (!srcfileloc  "cp/parser.h" 138)
                                          (!options 
                                           (!option skip string  "")
                                          )
@@ -25893,11 +25893,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1805 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.c:442"nil 
+ (!type struct 1805 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.c:446"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1806 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.c:451"nil 
+ (!type struct 1806 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.c:455"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -25909,7 +25909,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1809 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.c:1335"nil 
+ (!type struct 1809 nil  gc_unused "anonymous:../../gcc/gcc/config/aarch64/aarch64-builtins.c:1339"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -27922,8 +27922,8 @@
    (!type already_seen 2009)
   )
   gc_pointed_to "cp_lexer"
-  (!srcfileloc  "cp/parser.h" 230)
-  (!fields 10 
+  (!srcfileloc  "cp/parser.h" 234)
+  (!fields 11 
    (!pair  "buffer"
     (!type already_seen 2007)
     (!srcfileloc  "cp/parser.h" 87)
@@ -27973,6 +27973,10 @@
     (!type already_seen 2)
     (!srcfileloc  "cp/parser.h" 119)
     nil )
+   (!pair  "orphan_p"
+    (!type already_seen 2)
+    (!srcfileloc  "cp/parser.h" 123)
+    nil )
   )
   nil 516 nil nil )
  
@@ -27981,15 +27985,15 @@
   nil 0 nil nil )
  
  (!type struct 2012 nil  gc_used "cp_default_arg_entry"
-  (!srcfileloc  "cp/parser.h" 165)
+  (!srcfileloc  "cp/parser.h" 169)
   (!fields 2 
    (!pair  "class_type"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 153)
+    (!srcfileloc  "cp/parser.h" 157)
     nil )
    (!pair  "decl"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 156)
+    (!srcfileloc  "cp/parser.h" 160)
     nil )
   )
   nil 516 nil nil )
@@ -27999,37 +28003,37 @@
    (!type already_seen 2013)
   )
   gc_pointed_to "vec<cp_default_arg_entry,va_gc>"
-  (!srcfileloc  "cp/parser.h" 165)
+  (!srcfileloc  "cp/parser.h" 169)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "cp/parser.h" 165)
+    (!srcfileloc  "cp/parser.h" 169)
     nil )
    (!pair  "cp_default_arg_entry"
     (!type already_seen 2012)
-    (!srcfileloc  "cp/parser.h" 165)
+    (!srcfileloc  "cp/parser.h" 169)
     nil )
   )
  )
  
  (!type struct 2015 nil  gc_used "cp_unparsed_functions_entry"
-  (!srcfileloc  "cp/parser.h" 374)
+  (!srcfileloc  "cp/parser.h" 378)
   (!fields 4 
    (!pair  "funs_with_default_args"
     (!type already_seen 2014)
-    (!srcfileloc  "cp/parser.h" 165)
+    (!srcfileloc  "cp/parser.h" 169)
     nil )
    (!pair  "funs_with_definitions"
     (!type already_seen 84)
-    (!srcfileloc  "cp/parser.h" 169)
+    (!srcfileloc  "cp/parser.h" 173)
     nil )
    (!pair  "nsdmis"
     (!type already_seen 84)
-    (!srcfileloc  "cp/parser.h" 173)
+    (!srcfileloc  "cp/parser.h" 177)
     nil )
    (!pair  "noexcepts"
     (!type already_seen 84)
-    (!srcfileloc  "cp/parser.h" 176)
+    (!srcfileloc  "cp/parser.h" 180)
     nil )
   )
   nil 516 nil nil )
@@ -28039,19 +28043,19 @@
    (!type already_seen 2016)
   )
   gc_pointed_to "cp_parser_context"
-  (!srcfileloc  "cp/parser.h" 264)
+  (!srcfileloc  "cp/parser.h" 268)
   (!fields 3 
    (!pair  "status"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 198)
+    (!srcfileloc  "cp/parser.h" 202)
     nil )
    (!pair  "object_type"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 203)
+    (!srcfileloc  "cp/parser.h" 207)
     nil )
    (!pair  "next"
     (!type already_seen 2017)
-    (!srcfileloc  "cp/parser.h" 206)
+    (!srcfileloc  "cp/parser.h" 210)
     nil )
   )
   nil 516 nil nil )
@@ -28061,7 +28065,7 @@
    (!type already_seen 2018)
   )
   gc_unused "cp_omp_declare_simd_data"
-  (!srcfileloc  "cp/parser.h" 386)
+  (!srcfileloc  "cp/parser.h" 390)
   (!fields 0 )
   nil 516 nil nil )
  
@@ -28070,7 +28074,7 @@
    (!type already_seen 2020)
   )
   gc_unused "cp_oacc_routine_data"
-  (!srcfileloc  "cp/parser.h" 390)
+  (!srcfileloc  "cp/parser.h" 394)
   (!fields 0 )
   nil 516 nil nil )
  
@@ -28079,15 +28083,15 @@
    (!type already_seen 2022)
   )
   gc_pointed_to "vec<cp_unparsed_functions_entry,va_gc>"
-  (!srcfileloc  "cp/parser.h" 374)
+  (!srcfileloc  "cp/parser.h" 378)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "cp/parser.h" 374)
+    (!srcfileloc  "cp/parser.h" 378)
     nil )
    (!pair  "cp_unparsed_functions_entry"
     (!type already_seen 2015)
-    (!srcfileloc  "cp/parser.h" 374)
+    (!srcfileloc  "cp/parser.h" 378)
     nil )
   )
  )
@@ -28097,169 +28101,169 @@
    (!type already_seen 2024)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.c" 45558)
+  (!srcfileloc  "cp/parser.c" 45653)
   (!fields 39 
    (!pair  "lexer"
     (!type already_seen 2010)
-    (!srcfileloc  "cp/parser.h" 230)
+    (!srcfileloc  "cp/parser.h" 234)
     nil )
    (!pair  "scope"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 245)
+    (!srcfileloc  "cp/parser.h" 249)
     nil )
    (!pair  "object_scope"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 252)
+    (!srcfileloc  "cp/parser.h" 256)
     nil )
    (!pair  "qualifying_scope"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 253)
+    (!srcfileloc  "cp/parser.h" 257)
     nil )
    (!pair  "context"
     (!type already_seen 2017)
-    (!srcfileloc  "cp/parser.h" 264)
+    (!srcfileloc  "cp/parser.h" 268)
     nil )
    (!pair  "allow_gnu_extensions_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 268)
+    (!srcfileloc  "cp/parser.h" 272)
     nil )
    (!pair  "greater_than_is_operator_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 275)
+    (!srcfileloc  "cp/parser.h" 279)
     nil )
    (!pair  "default_arg_ok_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 280)
+    (!srcfileloc  "cp/parser.h" 284)
     nil )
    (!pair  "integral_constant_expression_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 284)
+    (!srcfileloc  "cp/parser.h" 288)
     nil )
    (!pair  "allow_non_integral_constant_expression_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 290)
+    (!srcfileloc  "cp/parser.h" 294)
     nil )
    (!pair  "non_integral_constant_expression_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 294)
+    (!srcfileloc  "cp/parser.h" 298)
     nil )
    (!pair  "local_variables_forbidden_p"
     (!type already_seen 8)
-    (!srcfileloc  "cp/parser.h" 301)
+    (!srcfileloc  "cp/parser.h" 305)
     nil )
    (!pair  "in_unbraced_linkage_specification_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 306)
+    (!srcfileloc  "cp/parser.h" 310)
     nil )
    (!pair  "in_declarator_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 310)
+    (!srcfileloc  "cp/parser.h" 314)
     nil )
    (!pair  "in_template_argument_list_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 313)
+    (!srcfileloc  "cp/parser.h" 317)
     nil )
    (!pair  "in_statement"
     (!type already_seen 8)
-    (!srcfileloc  "cp/parser.h" 325)
+    (!srcfileloc  "cp/parser.h" 329)
     nil )
    (!pair  "in_switch_statement_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 331)
+    (!srcfileloc  "cp/parser.h" 335)
     nil )
    (!pair  "in_type_id_in_expr_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 336)
+    (!srcfileloc  "cp/parser.h" 340)
     nil )
    (!pair  "translate_strings_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 340)
+    (!srcfileloc  "cp/parser.h" 344)
     nil )
    (!pair  "in_function_body"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 344)
+    (!srcfileloc  "cp/parser.h" 348)
     nil )
    (!pair  "in_transaction"
     (!type already_seen 8)
-    (!srcfileloc  "cp/parser.h" 348)
+    (!srcfileloc  "cp/parser.h" 352)
     nil )
    (!pair  "colon_corrects_to_scope_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 351)
+    (!srcfileloc  "cp/parser.h" 355)
     nil )
    (!pair  "colon_doesnt_start_class_def_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 357)
+    (!srcfileloc  "cp/parser.h" 361)
     nil )
    (!pair  "objective_c_message_context_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 361)
+    (!srcfileloc  "cp/parser.h" 365)
     nil )
    (!pair  "type_definition_forbidden_message"
     (!type already_seen 11)
-    (!srcfileloc  "cp/parser.h" 366)
+    (!srcfileloc  "cp/parser.h" 370)
     nil )
    (!pair  "type_definition_forbidden_message_arg"
     (!type already_seen 11)
-    (!srcfileloc  "cp/parser.h" 369)
+    (!srcfileloc  "cp/parser.h" 373)
     nil )
    (!pair  "unparsed_queues"
     (!type already_seen 2023)
-    (!srcfileloc  "cp/parser.h" 374)
+    (!srcfileloc  "cp/parser.h" 378)
     nil )
    (!pair  "num_classes_being_defined"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 378)
+    (!srcfileloc  "cp/parser.h" 382)
     nil )
    (!pair  "num_template_parameter_lists"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 382)
+    (!srcfileloc  "cp/parser.h" 386)
     nil )
    (!pair  "omp_declare_simd"
     (!type already_seen 2019)
-    (!srcfileloc  "cp/parser.h" 386)
+    (!srcfileloc  "cp/parser.h" 390)
     (!options 
      (!option skip string  "")
     )
    )
    (!pair  "oacc_routine"
     (!type already_seen 2021)
-    (!srcfileloc  "cp/parser.h" 390)
+    (!srcfileloc  "cp/parser.h" 394)
     (!options 
      (!option skip string  "")
     )
    )
    (!pair  "auto_is_implicit_function_template_parm_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 394)
+    (!srcfileloc  "cp/parser.h" 398)
     nil )
    (!pair  "fully_implicit_function_template_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 399)
+    (!srcfileloc  "cp/parser.h" 403)
     nil )
    (!pair  "omp_attrs_forbidden_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 402)
+    (!srcfileloc  "cp/parser.h" 406)
     nil )
    (!pair  "implicit_template_parms"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 410)
+    (!srcfileloc  "cp/parser.h" 414)
     nil )
    (!pair  "implicit_template_scope"
     (!type already_seen 82)
-    (!srcfileloc  "cp/parser.h" 417)
+    (!srcfileloc  "cp/parser.h" 421)
     nil )
    (!pair  "in_result_type_constraint_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 422)
+    (!srcfileloc  "cp/parser.h" 426)
     nil )
    (!pair  "prevent_constrained_type_specifiers"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 426)
+    (!srcfileloc  "cp/parser.h" 430)
     nil )
    (!pair  "innermost_linkage_specification_location"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 430)
+    (!srcfileloc  "cp/parser.h" 434)
     nil )
   )
   nil 516 nil nil )
@@ -29401,7 +29405,7 @@
   nil 0 nil nil )
  
  (!type undefined 2185 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.c" 33068)
+  (!srcfileloc  "cp/parser.c" 33084)
  )
  
  (!type struct 2186 
@@ -29737,7 +29741,7 @@
   nil 0 nil nil )
  
  (!type struct 2240 nil  gc_used "module_hasher"
-  (!srcfileloc  "fortran/trans-decl.c" 5189)
+  (!srcfileloc  "fortran/trans-decl.c" 5195)
   (!fields 0 )
   nil 16 nil nil )
  
@@ -29746,11 +29750,11 @@
    (!type already_seen 2241)
   )
   gc_pointed_to "hash_table<module_hasher>"
-  (!srcfileloc  "fortran/trans-decl.c" 5189)
+  (!srcfileloc  "fortran/trans-decl.c" 5195)
   (!fields 1 
    (!pair  "module_hasher"
     (!type already_seen 2240)
-    (!srcfileloc  "fortran/trans-decl.c" 5189)
+    (!srcfileloc  "fortran/trans-decl.c" 5195)
     nil )
   )
  )
@@ -30518,11 +30522,11 @@
   nil )
  (!pair  "module_hasher"
   (!type already_seen 2240)
-  (!srcfileloc  "fortran/trans-decl.c" 5189)
+  (!srcfileloc  "fortran/trans-decl.c" 5195)
   nil )
  (!pair  "hash_table<module_hasher>"
   (!type already_seen 2241)
-  (!srcfileloc  "fortran/trans-decl.c" 5189)
+  (!srcfileloc  "fortran/trans-decl.c" 5195)
   nil )
  (!pair  "tree_frame_info"
   (!type already_seen 647)
@@ -30642,15 +30646,15 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 2024)
-  (!srcfileloc  "cp/parser.c" 45558)
+  (!srcfileloc  "cp/parser.c" 45653)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2185)
-  (!srcfileloc  "cp/parser.c" 33068)
+  (!srcfileloc  "cp/parser.c" 33084)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2185)
-  (!srcfileloc  "cp/parser.c" 33068)
+  (!srcfileloc  "cp/parser.c" 33084)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2307 nil  gc_unused "NUM_PREC_VALUES" 
@@ -30970,43 +30974,43 @@
   nil )
  (!pair  "cp_oacc_routine_data"
   (!type already_seen 2020)
-  (!srcfileloc  "cp/parser.h" 390)
+  (!srcfileloc  "cp/parser.h" 394)
   nil )
  (!pair  "cp_omp_declare_simd_data"
   (!type already_seen 2018)
-  (!srcfileloc  "cp/parser.h" 386)
+  (!srcfileloc  "cp/parser.h" 390)
   nil )
  (!pair  "cp_unparsed_functions_entry"
   (!type already_seen 2015)
-  (!srcfileloc  "cp/parser.h" 374)
+  (!srcfileloc  "cp/parser.h" 378)
   nil )
  (!pair  "vec<cp_unparsed_functions_entry,va_gc>"
   (!type already_seen 2022)
-  (!srcfileloc  "cp/parser.h" 374)
+  (!srcfileloc  "cp/parser.h" 378)
   nil )
  (!pair  "cp_parser_context"
   (!type already_seen 2016)
-  (!srcfileloc  "cp/parser.h" 264)
+  (!srcfileloc  "cp/parser.h" 268)
   nil )
  (!pair  "cp_lexer"
   (!type already_seen 2009)
-  (!srcfileloc  "cp/parser.h" 230)
+  (!srcfileloc  "cp/parser.h" 234)
   nil )
  (!pair  "cp_default_arg_entry"
   (!type already_seen 2012)
-  (!srcfileloc  "cp/parser.h" 165)
+  (!srcfileloc  "cp/parser.h" 169)
   nil )
  (!pair  "vec<cp_default_arg_entry,va_gc>"
   (!type already_seen 2013)
-  (!srcfileloc  "cp/parser.h" 165)
+  (!srcfileloc  "cp/parser.h" 169)
   nil )
  (!pair  "cp_token_cache_ptr"
   (!type already_seen 70)
-  (!srcfileloc  "cp/parser.h" 137)
+  (!srcfileloc  "cp/parser.h" 141)
   nil )
  (!pair  "cp_token_cache"
   (!type already_seen 71)
-  (!srcfileloc  "cp/parser.h" 137)
+  (!srcfileloc  "cp/parser.h" 141)
   nil )
  (!pair  "vec<cp_token_position>"
   (!type already_seen 2008)
@@ -31376,15 +31380,15 @@
   nil )
  (!pair  "builtin_simd_arg"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 1489)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 1493)
   nil )
  (!pair  "aarch64_fcmla_laneq_builtin_datum"
   (!type already_seen 1806)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 457)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 461)
   nil )
  (!pair  "aarch64_crc_builtin_datum"
   (!type already_seen 1805)
-  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 447)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 451)
   nil )
  (!pair  "aarch64_simd_builtin_datum"
   (!type already_seen 1804)
@@ -34951,7 +34955,7 @@
   nil )
  (!pair  "module_htab"
   (!type already_seen 2242)
-  (!srcfileloc  "fortran/trans-decl.c" 5189)
+  (!srcfileloc  "fortran/trans-decl.c" 5195)
   nil )
  (!pair  "saved_local_decls"
   (!type already_seen 23)
@@ -35196,15 +35200,15 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 46050)
+  (!srcfileloc  "cp/parser.c" 46145)
   nil )
  (!pair  "the_parser"
   (!type already_seen 2025)
-  (!srcfileloc  "cp/parser.c" 45558)
+  (!srcfileloc  "cp/parser.c" 45653)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
-  (!srcfileloc  "cp/parser.c" 18751)
+  (!srcfileloc  "cp/parser.c" 18767)
   nil )
  (!pair  "cp_parser_context_free_list"
   (!type already_seen 2017)
@@ -36005,7 +36009,7 @@
   (!type array 2358 nil  gc_used "AARCH64_BUILTIN_MAX" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 551)
+  (!srcfileloc  "config/aarch64/aarch64-builtins.c" 555)
   nil )
  (!pair  "omp_requires_mask"
   (!type already_seen 2)
